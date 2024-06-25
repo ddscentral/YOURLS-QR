@@ -157,6 +157,16 @@ function yourls_statlink( $keyword = '' ) {
     return yourls_apply_filter( 'yourls_statlink', $link, $keyword );
 }
 
+function yourls_qrlink($id) {
+	$link = yourls_normalize_uri( yourls_get_yourls_site() . '/qr/?id=' . $id );
+
+	if( yourls_is_ssl() ) {
+		$link = yourls_set_url_scheme( $link, 'https' );
+	}
+
+	return yourls_apply_filter( 'yourls_link', $link, $id );
+}
+
 /**
  * Return admin link, with SSL preference if applicable.
  *
