@@ -1,7 +1,9 @@
 <?php
 
-// Set your base URL
-define('BASE_URL', 'https://url.example.com');
+require_once dirname(__FILE__) . "/../user/config.php";
+
+// Set your base URL, default to YOURLS_SITE
+define('BASE_URL', YOURLS_SITE);
 
 function qr_url($id) {
 	return BASE_URL . '/' . $id;
