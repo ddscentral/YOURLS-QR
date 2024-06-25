@@ -187,6 +187,9 @@ td.actions .button_delete {
 td.actions .button_stats {
 	background:transparent url(../images/chart_bar.svg) center no-repeat;
 }
+td.actions .button_qr {
+	background:transparent url(../images/qrcode.svg) center no-repeat;
+}
 #main_table tfoot th, #main_table tfoot th div {
 	font-size:10px;
 }
